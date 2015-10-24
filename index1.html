@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>chatSocketAchex.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/prism.css">
+    
+      <script src="js/jquery.min.js"></script> 
+      <script src="js/prism.js"></script>
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="chatSocketAchex.js"></script>
+       <link rel="stylesheet" type="text/css" href="chatSocketAchex.css">
+             
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+            <div  class="well" >
+                <a href="http://develoteca.com">
+                    <img src="http://develoteca.com/wp-content/themes/site/img/develoteca.png"/>
+               <br/>by develoteca.com
+                </a>
+                
+            </div>
+          <a href="https://github.com/oscaruhp/ShakeBorder/archive/gh-pages.zip" class="btn3d btn btn-success btn-lg">Download v1.0</a>
+              <br/><br/>
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- lateral -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-4331617637495482"
+     data-ad-slot="7438564459"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+              <div class="col-md-12 well">
+                  <h3>Thank you for comments</h3>
+           <div id="fb-root"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_MX/sdk.js#xfbml=1&version=v2.4&appId=132799306837455";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+              <div class="fb-comments" data-href="http://oscaruhp.github.io/ShakeBorder/" data-width="300" data-numposts="5"></div>
+                 </div>  
+          </div>
+            
+    <div class="col-md-8">
+        <br/>
+        <h1 class="text-center"><span style="color:#449D44">chatSocketAchex</span> jQuery Plugin</h1>
+        
+        <h1>chatSocketAchex (Demo)</h1>
+        <div class="row alert alert-info">
+        
+         <div class="col-lg-4">
+            <div id="ListaOnline">
+               
+            </div>
+            
+         </div>   
+         
+          <div class="col-lg-8">            
+          <div id="Elchat"></div>
+          </div>   
+</div>
+            
+        
+      <script type="text/javascript">
+           $('#Elchat').ChatSocket({'lblEntradaNombre':'Enter a user name in the field below for the chat room'});
+        </script>
+        
+        <h2>chatSocketAchex jQuery</h2>
+              <h3>Quick start</h3>
+            1.- Include the files
+            <pre><code class="language-markup">
+    <br>  
+    &lt;!-- Bootstrap and JQuery --&gt;<br>    
+    &lt;script src=&quot;jquery.min.js&quot;&gt; &lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&quot;&gt;    
+    
+    &lt;!-- Plugin --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;chatSocketAchex.css&quot;&gt;
+    &lt;script src=&quot;chatSocketAchex.js&quot;&gt;&lt;/script&gt;    
+
+</code></pre>
+              
+            2.- Create HTML Element
+            <pre><code class="language-markup">
+   &lt;div id=&quot;Elchat&quot;&gt;&lt;/div&gt;
+             </code></pre>
+            
+            
+            3.- Call the the plugin on a container as your wish
+            <pre><code class="language-javascript">
+   $('#Elchat').ChatSocket();
+               </code></pre>
+            
+            
+             4.- All done!
+            
+            <h2>Options</h2>
+            you can custom by passing options when call the plugin, all available options are listed below.
+call the the plugin on a container wish you wish
+            
+            
+             <pre><code class="language-javascript">
+        $('#Elchat').ChatSocket({
+                    option: value,
+                    option2: value2
+       });
+                 
+               </code></pre>
+            Demo (Options)
+           <pre><code class="language-javascript">
+        { 
+       Room:&quot;RoomDeveloteca&quot;, // important  - room or user
+       pass:&quot;1234&quot;, // important - pass of room or user
+       lblTitulChat:&quot; Chat Develoteca.com &quot;, //Chat Name
+       lblCampoEntrada:&quot;Menssage&quot;,
+       lblEnviar:&quot;Send&quot;,
+       textoAyuda:&quot;Develoteca&quot;, // Help button
+       Nombre:&quot;Anónimo&quot;, // default Name.
+       urlImg:&quot;http://placehold.it/50/55C1E7/fff&amp;text=U&quot;, // Avatar chat
+       btnEntrar:&quot;btnEntrar&quot;,
+       btnEnviar:&quot;btnEnviar&quot;,
+       lblBtnEnviar:&quot;Enviar&quot;,
+       lblTxtEntrar:&quot;txtEntrar&quot;,
+       lblTxtEnviar:&quot;txtMensaje&quot;,
+       lblBtnEntrar:&quot;Enter&quot;,  // Joined button
+       idDialogo:&quot;DialogoEntrada&quot;, 
+       classChat:&quot;&quot;,  // add class chat
+       idOnline:&quot;ListaOnline&quot;, // id control users joined 
+       lblUsuariosOnline:&quot;Users joined&quot;, // text users online 
+       lblEntradaNombre:&quot;Name:&quot;,
+       panelColor:&quot;success&quot;
+        }
+           </code></pre>
+          <div class="panel panel-default">
+            <div class="panel-heading"><h1>&nbsp;</h1></div>
+        </div>
+    </div>
+    
+        </div>
+    </div>
+    
+  </body>
+</html>
